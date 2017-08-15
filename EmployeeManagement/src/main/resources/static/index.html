@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Employee Management</title>
+
+
+<style>
+body {
+	padding-top: 10px;
+	background-color: #F5F5F5;
+}
+
+.pagination {
+	margin: 0px !important;
+}
+</style>
+
+
+<link rel="stylesheet"
+	href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/ng-table/0.8.3/ng-table.min.css" />
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.js"></script>
+
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/ng-table/0.8.3/ng-table.min.js"></script>
+
+
+<script src="/js/home.js"></script>
+<script src="/js/common.js"></script>
+<script src=/js/factory.js></script>
+<script src="/js/add-employee.js"></script>
+<script src="/js/employee-details.js"></script>
+
+</head>
+
+<body ng-app="employeeApp">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<ul class="nav">
+					<li><a href="#!add-employee"> Add Employee </a></li>
+					<li><a href="#!employee-details"> Employee Details </a></li>
+				</ul>
+			</div>
+			<div class="col-md-10">
+				<div ng-view></div>
+			</div>
+		</div>
+	</div>
+	<!-- /.container -->
+</body>
+</html>
